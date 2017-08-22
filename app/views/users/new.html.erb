@@ -18,9 +18,10 @@ Email:<br><%= text_field_tag(:email) %><br>
 Password:<br><%= text_field_tag(:password) %><br>
  <%= submit_tag("Submit") %><br>
 -->
-<%= form_for @user, url: {action: "create"} do |f| %>
+<div><%= form_for @user, url: {action: "create"} do |f| %>
   Username:<br> <%= f.text_field :username, placeholder: "Username" %><br>
   Password:<br><%= f.text_field :password, placeholder: "Password"  %><br>
   Email:<br><%= f.text_field :email, placeholder: "Email" %><br>
   <%= f.submit "Submit" %><br>
 <% end %>
+</div>
